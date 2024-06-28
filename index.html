@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <p>Manage all your student information here.</p>
+    </header>
+
+    <article class="content">
+        
+        <section class="registrationForm">
+            <h2>Register Student</h2>
+            <form id="S_Form">
+                
+                <div class="Formsec">
+                    <label for="S_name">Name:</label>
+                    <input type="text" id="S_name" name="S_name" required>
+                </div>
+                <div class="Formsec">
+                    <label for="s_id">StdID:</label>
+                    <input type="text" id="s_id" name="s_id" required>
+                </div>
+                <div class="Formsec">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="Formsec">
+                    <label for="contact">Contact:</label>
+                    <input type="tel" id="contact" name="contact" minlength="10" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <section class="SRecords">
+            <h2>Student Records</h2>
+            <div id="RecordCon">
+                <table id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Student ID</th>
+                            <th>Email ID</th>
+                            <th>Contact No</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="Recordtable">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </article>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
