@@ -1,0 +1,31 @@
+GIT: https://github.com/HardeepSinghh9/srs.git
+
+loadRecordsFromLocalStorage()
+Loads saved student records from browser's local storage.
+Populates the records into an HTML table (Recordtable).
+
+addStudentRecord()
+Handles form submission (S_Form) to add a new student record.
+Performs validations for name (alphabet characters only) and contact (numeric digits only).
+Inserts a new row into Recordtable with the entered student details.
+Saves the new record to local storage (SRecords).
+
+editStudentRecord(recordRow)
+Enables editing of an existing student record.
+Converts table cells into input fields for editing.
+Converts the edit button into a save button (save-btn).
+
+saveEditedRecord(recordRow)
+Saves the edited student record after modification.
+Updates the record in SRecords in local storage.
+Converts input fields back into text cells after saving.
+
+deleteStudentRecord(recordRow)
+Deletes a student record from Recordtable.
+Removes the record from SRecords in local storage.
+
+saveRecordToLocalStorage(record)
+Saves a new student record to local storage (SRecords).
+
+fileToBase64(file)
+Converts a file (not explicitly used in provided code) to Base64 format asynchronously.
